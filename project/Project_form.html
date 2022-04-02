@@ -1,0 +1,91 @@
+<!DOCTYpe html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            MAKING FORM FOR REVISION
+        </title>
+    </head>
+    <body>
+        <style>
+            h1{
+                font-family:'chiller';
+                color:aqua;
+                text-align:center;
+                font-size:40px;
+            }
+            body{
+                font-family:'Ink Free';
+                font-size:26px;
+                background-image:url('./html/mail/img/3.jpg');
+                background-attachment:fixed;
+                background-position:center;
+                background-repeat:no-repeat;
+                color:white;
+                backdrop-filter:blur(9px);
+                zoom:130%;
+                text-align:center;
+            }
+            input{
+                background: transparent;
+                color:white;
+                font-family:'Ink Free';
+                block-size: 28px;
+                font-size:22px;
+                border-block-color: white;
+                border-block-end-color: white;
+                text-align:center;
+            }
+            ::placeholder{
+                color:aliceblue;
+            }
+        </style>
+        <h1>Making form for REVISION</h1>
+        <form action="" method="post">
+            <fieldset>
+                <legend>BASIC INFORMATION</legend>
+                <label for="first_name">First Name&#58;&nbsp;<input name="First_Name" id="First_Name" value="" type="text" placeholder="Enter First Name Here"
+                     size="25" maxlength="25" minlength="4"></label>&ensp;&ensp;
+                <label for="last_name">Last Name&#58;&nbsp;<input name="Last_Name" id="Last_Name" value="" type="text" placeholder="Enter Last Name here"
+                     size="30" minlength="2" maxlength="25"></label>
+                <datalist id="Nationality">
+                    <option value="Indian"/>
+                    <option value="Christen"/>
+                    <option value="Muslim"/>
+                    <option value="Sikh"/>
+                </datalist>
+                <br>
+                <label for="Nationality">Nationality&#58;&nbsp;<input name="Nationality" id="Nationality" value="" list="Nationality" 
+                    placeholder="Choose Your Nationality" size="30"></label>
+                <br>
+                <label for="email">Email&#58;&nbsp;<input name="Email" id="Email" value="" type="email" size="50" minlength="15" maxlength="40"
+                     placeholder="Enter Email Address Here(personal)"></label>
+                <br>
+                <datalist id="study_level">
+                    <option value="Secondary School"/>
+                    <option value="Senior Secondary School"/>
+                    <option value="Graduate"/>
+                    <option value="Under Graduate&#34;Post graduate"/>
+                    <option value="Master Degree"/>
+                </datalist>
+                <label for="study_level">Study Level&#58;&nbsp;<input list="study_level" id="Study_level" value="" placeholder="Choose Your Study Level"
+                     size="30" name="study_level"></label>
+            </fieldset>
+            <fieldset>
+                <legend>ADDRESS</legend>
+                <label for="Country">Country&#58;&nbsp;<input name="Country" id="Country" value="" size="30" placeholder="Enter Your Country Name" 
+                    minlength="4" maxlength="25" type="text"></label><br>
+                <label for="State">State&#58;&nbsp;<input name="State" id="state" value="" size="30" placeholder="Enter Your State Name" minlength="4"
+                     maxlength="25" type="text"></label><br>
+                <label for="House_Number">House Number&#58;&nbsp;<input name="H_No" id="H_No" value="" placeholder="H_No" type="tel" size="5" minlength="3"
+                     maxlength="5"></label><br>
+                <label for="permanent_add">Permanent Address&#58;&nbsp;<input value="" name="P_add" id="P_add" maxlength="50" minlength="10" type="text"
+                     size="100" placeholder="Enter Your Permanent Address"></label><br>
+                <label for="Curr_add">Current Address&#58;&nbsp;<input value="" name="C_add" id="C_add" maxlength="50" minlength="10" type="text"
+                     size="100" placeholder="Enter Your Current Address"></label>
+            </fieldset>
+            <input type="button" value="Submit Your Form Here">
+            <input type="reset" value="Submit Your Form Here">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Srcset
+        </title>
+    </head>
+    <body>
+        <h1>SrcSet Using x-discreptor </h1>
+        <img src="./Img/1.png"
+         srcset="./Img/1_400.png 3.5x, ./Img/1_600.png 2.5x, ./Img/1_800.png 1.5x,./Img/1.png 1.1x" alt=""><!--1x means less than 100, 1.5x means less than 150 and so on -->
+         <!-- Browser will automatically choose the best option out of these four img resolutions -->
+         <br>
+         <h1>SrcSet using y-discreptor</h1>
+         <img src="./Img/1.png", alt="",srcset="./Img/1_800.png 800w, ./Img/1_600.png 600w, ./Img/1_400.png 400w", Sizes="100vw">
+    </body>
+</html>

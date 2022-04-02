@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            SEARCH EMAIL TEL AND URL
+        </title>
+    </head>
+    <body>
+        <style>
+            h2{
+                text-align:center;
+                font-size:46px;
+                font-family:'Ink Free';
+                viewport-fit:initial;
+                color:aqua;
+            }
+            body{
+                font-family:'Kristen ITC';
+                font-size: 28px;
+                text-align: center;
+                background-image:url("../html/mail/Img/3.jpg");
+                backdrop-filter: blur(4px);
+                background-repeat: no-repeat;
+                background-position:center;
+                background-attachment:fixed;
+                zoom: 130%;
+            }
+            input{
+                block-size: 30px;
+                text-align: center;
+                font-family: 'Ink Free'; 
+                font-size: 28px;
+                background: transparent;
+                color: white;
+            }
+            ::placeholder{
+                color: white;
+            }
+            fieldset{
+                color: aliceblue;
+            }
+        </style>
+        <h2 id="Heading"> Making form controls for Search, Email, Telephone number and url</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Search</legend>
+                <input type="search" name="search" value="" id="Search" placeholder="Search Your info here" size="50">
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" value="" id="email" name="email" size="50" maxlength="50" minlength="12" placeholder="Enter your Email Address">
+            </fieldset>
+            <fieldset>
+                <legend>Telephone Number</legend>
+                <input type="tel" name="telephone_number" maxlength="10" minlength="10" size="35" placeholder="Enter Your Phone Number" id="tel">
+            </fieldset>
+            <fieldset>
+                <legend>URL</legend>
+                <input name="url" id="url" type="url" placeholder="Enter the doc Address" maxlength="150" minlength="12" size="50">
+            </fieldset>
+            <input type="submit" id="submit">
+            <br>
+            <br>
+            <hr>
+            <hr>
+            <a href="#Heading">Back to Top</a>
+        </form>
+    </body>
+</html>

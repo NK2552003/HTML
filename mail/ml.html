@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            MAILING LIST
+        </title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <style>
+            body{
+                font-family: 'Ink Free';
+                background-image: url("./Img/3.jpg");
+                background-repeat: no-repeat;
+                background-position:center;
+                background-attachment:fixed;
+                display:blocks;
+                margin: 10px;
+                backdrop-filter: blur(7px);
+                zoom:130%;
+                text-align: center;
+            }
+            h1{
+                font-family:'Kristen ITC';
+                color:aliceblue;
+            }
+            h2{
+                font-family:'Ink Free';
+                color:white;
+            }
+            input{
+                font-family:'Ink Free';
+                font-size:medium;
+                background:transparent;
+                text-shadow:white;
+                color: White;
+            }
+            textarea{
+                font-family:'Ink Free';
+                font-size:large;
+                width: 70vw;
+                background: transparent;
+                color:white;
+            }
+            ::placeholder
+            {
+                font-style: italic;
+                color:white;
+            }
+            fieldset{
+                align-content: center;
+            }
+            legend{
+                color:white;
+            }
+        </style>
+        <hr>
+         <cite><h1>Mailing The List</h1></cite><br><hr>
+        <form action="" method="post">
+            <fieldset>
+                <legend><h1><em>Information for subscription</em></h1></legend>
+                <h2>For Getting the Information about New Products and <strong>offers</strong></h2>
+                        <label for="firstlast"><img src="./Ico/user.png" heigth="20" width="20" alt="User Name" >&nbsp;<input name="Full name" id="Full Name" type="text" 
+                            maxlength="50" placeholder="Enter Your Full Name" size="30"></label><br>
+                        <label for="email"><img src="./Ico/gmail.png" width="20" heigth="20" alt="Email Address">&nbsp;<input name="email" id="email" type="text" maxlength="50"
+                             size="30" placeholder="Enter Your Email Address"></label><br>
+                             <br>
+                             <br>
+            </fieldset>
+            <fieldset>
+                <legend>Leave us a comment</legend>
+                <textarea rows="5" columns="50" size="100" placeholder="Enter the comment Here"></textarea>
+            </fieldset>
+            <blockquote><input type="submit" id="submit" name="submit">
+                <input type="reset" id="reset" name="reset">
+            </blockquote>
+        </form>
+    </body>
+</html>

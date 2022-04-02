@@ -1,0 +1,29 @@
+<!DOCTPYE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Upload Files on the browser
+        </title>
+    </head>
+    <body>
+        <p>
+           <b>Upload File Like This</b>
+        </p>
+        <code>
+            <kdb>&#60;input type&#61;<q>file</q></kdb>&#62;  
+            <!--Just set the input type to "file" and then after that set the type of file using "accept" attribute to your desigred format-->
+        </code>
+        <br>
+        <br>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Upload Type </legend>
+                <legend for="upload_file">
+                    Upload File(choose pdf files only)&ast;&nbsp;&#58;&ensp;<input type="file" accept=".pdf" name="PDF" value="Click Here" required>
+                </legend>
+            </fieldset>
+            <input  type="submit" value="Submit it">
+        </form>
+    </body>
+</html>

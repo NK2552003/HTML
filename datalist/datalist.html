@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Making a Dropdown Suggestions
+        </title>
+    </head>
+    <body>
+        <style>
+        </style>
+        <form>
+            <label>Qualifications&#58;&nbsp; <input type="text" list="qualification" name="qualification" id="qual_selection" size="30" placeholder="Select option">
+                <datalist id="qualification"/>
+                    <option value="Graduate"/>
+                    <option value="Post Graduate"/>
+                    <option value="Bachelor Degree"/>
+                    <option value="Master Degree"/>
+                </datalist><br>
+            </label>
+            <label>Qualifications&#58;&nbsp; <input type="text" list="qualification" name="qualification" id="qual_selection" size="30" placeholder="Select option">
+                <datalist id="qualification">
+                    <option>Graduate</option>
+                    <option>Post Graduate</option>
+                    <option>Bachelor Degree</option>
+                    <option>Master Degree</option>
+                </datalist>
+            </label>
+            <input type="submit" id="Submit">
+            <input type="reset" id="Reset_to_default_settings" value="Default values">
+        </form>
+    </body>
+</html>

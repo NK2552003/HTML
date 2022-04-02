@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Project for maths
+        </title>
+    </head>
+    <body>
+        <h1>Chapter 16</h1>
+        <h1><b>Relations and functions</b></h1>
+        <h3><u>Chapter content</u></h3>
+        <blockquote>
+        <ul>
+            <li><a href="#Intro">Introduction</a></li>
+            <li><a href="#Cartesian product of sets">Cartesia Product of sets</a></li>
+            <li><a href="#Relations">Relation</a></li>
+            <li>Functions</li>
+            <li>Domain and range for function</li>
+            <li>Some Function and their graphs</li>
+            <li>Algebra of real function</li>
+            <li>Transformation of graphs</li>
+            <li>Different type of functions</li>
+            <li>composition of two function</li>
+            <li>Inverse of a function</li>
+            <li>Even and odd function</li>
+            <li>Periodic function</li>
+            <li>Binary operation</li>
+            <li>Quick Recap</li>
+        </ul>
+        </blockquote>
+        <section id="Intro">
+            <h3>Introduction</h3>
+            <blockquote>
+            <p>
+                A <q>relation</q> is just a connection between the sets of information&#46;
+                <br><u>In this chapter &#44; we will study relations and function(a special type of relation)&#46;</u>
+            </p>
+            </blockquote>
+        </section>
+        <section id="Cartesian product of sets">
+            <h3>CARTESIAN PRODUCT OF SETS</h3>
+            <hr>
+            <ol>
+                <li>
+                    <dl>
+                        <dt><h4>Ordered pairs</h4></dt>
+                        <dd>A pair of elements &#44; listed in a specific order&#44;
+                             pair&#46; An ordered pair of elements taken from any set A and B is written in small brackets&#46;
+                              in ordered pair (a,b) &#44;<var>a</var><b>E</b>(belongs to)<var>A</var>&#44;
+                              is called the first element and <var>b</var><b>E</b>(belongs to)<var>B</var>
+                              &#44;is called the second element&#46; For example&#44;in the ordered pait(2&#44;4)&#44; 2 and 4 are the first
+                              and second elements respectively&#46;
+                              <br><br>
+                              Two ordered pairs are said to be equal if and only if the corresponding elements are equal i&#46;e&#46;&#44; 
+                              the corresponding first elements are equal and the second elements are also equal&#46;
+                              <br><br>
+                              Note that (<var>a</var>&#44;<var>b</var>) and (<var>b</var>&#44;<var>a</var>) are different ordered pairs&#46;
+                        </dd>
+                    </dl>
+                    <hr>
+                    <blcokquote>
+                        <b>Illustration 1:</b> If (<var>x</var>+<var>y</var>&#44; 5) = (10, <var>y</var>-3)&#44; find the value of <var>x</var> and <var>y</var>&#46;
+                        <br><b>Solution:</b> Since the ordered pairs are equal&#44; the corresponding elements are equal<br>
+                        <blockquote><blockquote><var>x</var> + <var>y</var> = 10<br>
+                        and <var>y</var> - 3 = 5<br>
+                        From (ii)&#44; y = 8<br>
+                        Putting the value of <var>y</var> in (i)&#44; we get <br>
+                            <var>x</var> = 2<br>
+                            Therefore&#44;<br>
+                            <blockquote>
+                            <var>x</var> = 2 and <var>y</var> = 8
+                            </blockquote>
+                        </blockquote>
+                        </blockquote>
+                    </blcokquote>
+                </li>
+                <li>
+                    <dl>
+                        <dt><h4>Cartesian Product of two sets</h4></dt>
+                        <dd>
+                            The Cartesian Product of two sets <var>A</var> and <var>B</var>is defined as the set of all ordered pairs of elements From
+                            <var>A</var> and <var>B</var>&#46; It is denoted by <var>A</var><b>x</b><var>B</var>&#46;<br><br>
+                            <var>A</var><b>x</b><var>B</var> = {(<var>a</var> &#44; <var>b</var>): <var>a</var><b>E</b><var>A</var>&#44; <var>b</var><b>E</b><var>B</var>}
+                            <br>
+                            For Example&#44; if <var>A</var>= {1 &#44; 2} and <var>B</var> = {1&#44; 4&#44; 5}&#44; then<br>
+                            <blockquote>
+                                <var>A</var><b>x</b><var>B</var> = {(1&#44; 1)&#44; (1&#44; 4)&#44; (1&#44; 5)&#44; (2&#44; 1)&#44; (2&#44; 4)&#44; (2&#44; 5)}
+                            </blockquote>
+                            Similarly&#44;<br>
+                            <blockquote>
+                                <var>B</var><b>x</b><var>A</var> = {(1&#44; 1)&#44; (1&#44; 2)&#44; (4&#44; 1)&#44; (4&#44; 2)&#44; (5&#44; 1)&#44; (5&#44; 2)}<br>
+                                <var>A</var><b>x</b><var>A</var> = {(1&#44; 1)&#44; (1&#44; 2)&#44; (2&#44; 1)&#44; (2&#44; 2)}<br>
+                                <var>B</var><b>x</b><var>B</var> = {(1&#44; 1)&#44; (1&#44; 4)&#44; (1&#44; 5)&#44; (4&#44; 1)&#44; (4&#44; 4)&#44; (4&#44; 5)&#44; (5&#44; 1)&#44; (5&#44; 4)&#44; (5&#44; 5) }<br>
+                            </blockquote>
+                            If either <var>A</var> or <var>B</var> is the empty set&#44; then <var>A</var><b>x</b><var>B</var> = &phi;&#46; Thus&#44; <var>A</var><b>x</b><var>B</var> will also be an empty set&#46;
+                            <br>
+                            However&#44; the number of elements in <var>A</var><b>x</b><var>B</var> and <var>B</var><b>x</b><var>A</var> are same&#46;
+                            <br>
+                            <br>
+                            <h5>Properties</h5>
+                            <ol>
+                                <li><var>A</var><b>x</b><var>B</var> and <var>B</var><b>x</b><var>A</var> need not equal&#46;</li>
+                                <li><var>A</var><b>x</b><var>B</var> = <var>B</var><b>x</b><var>A</var> only when <var>A</var> = <var>B</var>&#46;</li>
+                                <li><var>A</var><b>U</b><var>B</var> = &phi;&#44; then <var>A</var><b>x</b><var>B</var> = &phi;</li>
+                                <li><var>n</var>(<var>A</var><b>x</b><var>B</var>) = <var>n</var>(<var>A</var>)&#46;<var>n</var>(<var>B</var>)</li>
+                                <li><var>A</var><b>x</b>(<var>B</var><b>U</b><var>C</var>) = (<var>A</var><b>x</b><var>B</var>)<b>U</b>(<var>A</var><b>x</b><var>C</var>)</li>
+                                <li><var>A</var><b>x</b>(<var>B</var>&Intersection;<var>C</var>) = (<var>A</var><b>x</b><var>B</var>)&Intersection;(<var>A</var><b>x</b><var>C</var>)</li>
+                                <li><var>A</var><b>x</b>(<var>B</var>&minus;<var>C</var>) = (<var>A</var><b>x</b><var>B</var>)&minus;(<var>A</var><b>x</b><var>C</var>)</li>
+                                <li><var>B</var><b>c</b><var>C</var> = <var>A</var><b>x</b><var>B</var> <b>c</b> <var>A</var><b>x</b><var>C</var></li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <hr>
+                    <b>Illustration 2:</b> If <var>A</var> = {1&#44; 2&#44;2 &#44; 3} and <var>B</var> = {<var>m</var>&#44; <var>n</var>}&#44; find <var>A</var><b>x</b><var>B</var> and <var>B</var><b>x</b><var>A</var>&#46; Are these two products equal&#46;
+                    <br><b>Solution :</b> <br>
+                    <blockquote>
+                        <var>A</var><b>x</b><var>B</var> = {(1&#44; <var>m</var>)&#44; (1&#44; <var>n</var>)&#44; (2&#44; <var>m</var>)&#44; (2&#44; <var>n</var>)&#44; (3&#44; <var>m</var>)&#44; (3&#44; <var>n</var>)}<br>
+                        <var>B</var><b>x</b><var>A</var> = {(<var>m</var>&#44; 1)&#44; (<var>m</var>&#44; 2)&#44; (<var>m</var>&#44; 3)&#44; (<var>n</var>&#44; 1)&#44; (<var>n</var>&#44; 2)&#44; (<var>n</var>&#44; 3)}<br>
+                        Since&#44; (1&#44; <var>m</var>) is not equal to (<var>m</var>&#44; 1)&#44; we conclude that <var>A</var><b>x</b><var>B</var> is not equal to <var>B</var><b>x</b><var>A</var>&#46;
+                        <br>
+                        <br>
+                    </blockquote>
+                    <hr>
+                    <b>Illustration 3:</b> If <var>A</var> = {<var>a</var>&#44; <var>b</var>&#44; <var>c</var>} and <var>B</var> = {<var>p</var>&#44; <var>q</var>&#44; <var>r</var>}&#44; then find the number of elements in <var>A</var><b>x</b><var>B</var>&#46;<br>
+                    <b>Solution :</b>
+                    <blockquote>
+                        Here <var>n</var>(<var>A</var>) = 3<br>
+                        <var>n</var>(<var>B</var>) = 3<br>
+                        therefore <var>n</var>(<var>A</var> &#44; <var>B</var>) = <var>n</var>(<var>A</var>) <b>x</b> <var>n</var>(<var>B</var>)
+                        <br>
+                        <blockquote>
+                            = 3 <b>x</b> 3
+                            = 9
+                        </blockquote>
+                        Number of elements in <var>A</var><b>x</b><var>B</var> = 9
+                    </blockquote>
+                    <b>Number of elements in the cartesian products of two sets</b>
+                    <p>
+                        We can observe from previous examples that when number of elements in set <var>A</var> in <var>m</var> and the number of elements in set <var>B</var>
+                        is <var>n</var>&#44; then the number of ordered pairs in <var>A</var><b>x</b><var>B</var> is <var>mn</var>&#46;
+                        <br>
+                        <br>
+                        We can write that if <var>n</var>(<var>A</var>) = <var>p</var> and <var>n</var>(<var>B</var>) = <var>q</var>&#44; then <var>n</var>(<var>A</var>&#44; <var>B</var>) = <var>pq</var>
+                    </p>
+                    <br>
+                    <b>Representing the cartesian product of two sets by arrow diagrams</b><br>
+                    <p>
+                        Let <var>A</var> = {1&#44; 2&#44; 3} and <var>B</var> = {<var>a</var>&#44; <var>b</var>}<br>
+                        Cartesian product of <var>A</var> and <var>B</var> &#46;i&#46;e&#46;<var>A</var><b>x</b><var>B</var> can be represented by arrow diagram as shown in the figure<br>
+                        <svg>
+                            <text text-size="22" font-family="Ink Free" x="60" y="17">
+                                A
+                            </text>
+                            <text text-size="22" font-family="Ink Free" x="160" y="17"> 
+                                B
+                            </text>
+                            <ellipse cx="100" cy="60" rx="30" ry="60" fill="Yellow"/>
+                            <text text-size="24" x="95" y="35" font-family="Ink Free">
+                                1
+                            </text>
+                            <text text-size="24" x="95" y="65" font-Family="Ink Free">
+                                2
+                            </text>
+                            <text text-size="24" x="95" y="95" font-family="Ink Free">
+                                3
+                            </text>
+                            <ellipse cx="200" cy="60" rx="30" ry="60" fill="Yellow"/>
+                            <text text-size="24" x="195" y="35" font-family="Ink Free">
+                                a
+                            </text>
+                            <text text-size="24" x="195" y="95" font-family="Ink Free">
+                                b
+                            </text>
+                            <line x1="105" y1="30" x2="195" y2="30" style="stroke:black"/>
+                            <line x1="105" y1="30" x2="195" y2="90" style="stroke:black"/>
+                            <line x1="105" y1="60" x2="195" y2="33" style="stroke:black"/>
+                            <line x1="105" y1="60" x2="195" y2="92" style="stroke:black"/>
+                            <line x1="105" y1="90" x2="195" y2="35" style="stroke:black"/>
+                            <line x1="105" y1="90" x2="195" y2="95" style="stroke:black"/>
+                        </svg>
+                    </p>
+                    <blockquote>
+                            <caption>
+                                (Arrow Diagram of <var>A</var><b>x</b><var>B</var>)
+                            </caption>
+                    </blockquote>
+                    In the Given figures &#44;lines have been drawn from each element of set <var>A</var> to each element of set <var>B</var>&#46;
+                    <aside>
+                        <b>Note:</b> If <var>n</var>(<var>A</var>&Intersection;<var>B</var>) = <var>m</var> then <var>n</var>{(<var>A</var><b>x</b><var>B</var>)  &Intersection; (<var>B</var><b>x</b><var>A</var>)} = <var>m</var><sup>2</sup>
+                    </aside>
+                    <blockquote>
+                        <h3>Try Yourself</h3>
+                        <hr>
+                        <ol>
+                            <li>
+                                If <var>P</var> ={a&#44; e&#44; i&#44;} and <var>Q</var> = {1&#44; 3&#44; 5}&#44; write <var>P</var> <b>x</b> <var>Q</var>&#44; <var>Q</var> <b>x</b> <var>P</var>&#44; <var>P</var> <b>x</b> <var>P</var>&#44; <var>Q</var> <b>x</b> <var>Q</var>&#46;
+                                Check whether <var>P</var> <b>x</b> <var>Q</var> and <var>Q</var> <b>x</b> <var>P</var> are equal&#46;
+                            </li>
+                            <li>
+                                If <var>A</var> = {&minus;3&#44; 3}&#44; form the set <var>A</var> <b>x</b> <var>A</var> <b>x</b> <var>A</var>&#46;
+                                <aside>
+                                    <b>Hint:</b> First find <var>A</var> <b>x</b> <var>B</var>&#46;
+                                </aside>
+                            </li>
+                            <li>
+                                The cartesian product <var>P</var> <b>x</b> <var>P</var> has 16 elements among which two elements are (a&#44; b) and (c&#44; d)&#46; Find the set <var>P</var> and the remaining elements of <var>P</var> <b>x</b> <var>P</var>&#46;
+                                <aside>
+                                    <b>Hint:</b> <var>n</var>(<var>P</var>) = 4<br>
+                                    <var>P</var> = {a&#44; b&#44; c&#44; d}
+                                </aside>
+                            </li>
+                            <li>
+                                Let <var>A</var> ={p&#44; q&#44; r} and <var>B</var> = {1&#44; 2}&#46; Represent the following cartesian Product by arrow diagram&#46;
+                                <ol>
+                                    <li>
+                                        <var>A</var> <b>x</b> <var>B</var>
+                                    </li>
+                                    <li>
+                                        <var>B</var> <b>x</b> <var>B</var>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Let <var>A</var> = {5&#44; 10&#44; 15} and <var>B</var> = {a<sub>1</sub>&#44; a<sub>2</sub>&#44; a<sub>3</sub>}&#46; Represent the following certesian product by arrow diagrams&#46;
+                                <ol>
+                                    <li>
+                                        <var>A</var> <b>x</b> <var>B</var>
+                                    </li>
+                                    <li>
+                                        <var>B</var> <b>x</b> <var>A</var>
+                                    </li>
+                                </ol>
+                            </li>                           
+                        </ol>
+                    </blockquote>
+                </li>
+            
+            </ol>
+        </section>
+        <section id="Relations">
+            <h2>Relations</h2>
+            <hr>
+            <blockquote>
+                <b>Relation:</b> Let <var>A</var> and <var>B</var> be two non-type sets&#46; A relation from Set <var>A</var> to set <var>B</var> is any suset of <var>A</var> <b>x</b> <var>B </var>&#46;
+                <br>
+                <b>For Example:</b> If <var>A</var> = {2&#44; 4&#44; 6} and <var>B</var> = {p&#44; q&#44; r}&#44; then <var>R</var> = {(2&#44;p)&#44; (2&#44; r)&#44; (4&#44; q)&#44; (6&#44; p)} is a relation from <var>A</var> to <var>B</var> as <var>R</var> is a subset of <var>A</var> <b>x</b> <var>B</var>&#46;<br>
+                <br>
+                <hr>
+                <b>Illustration 4:</b>If <var>A</var> = {3&#44; 5&#44; 7&#44; 9} and <var>B</var> = {a&#44; b&#44; c}&#44; then which of the following are relations from <var>A</var> to <var>B</var>&quest; Give reasons for your answer&#46;
+                <ol>
+                    <li>
+                        <var>R</var><sub>1</sub> = {(3&#44; a)&#44; (5&#44; c)&#44; (5&#44; b)}
+                    </li>
+                    <li>
+                        <var>R</var><sub>2</sub> = {(3&#44; c)&#44; (9&#44; b)&#44; (5&#44; a)}
+                    </li>
+                    <li>
+                        <var>R</var><sub>3</sub> = {(3&#44; c)&#44; (b&#44; c)&#44; (7&#44; b)&#44; (9&#44; a)}
+                    </li>
+                    <li>
+                        <var>R</var><sub>4</sub> = {(3&#44; b)&#44; (7&#44; c)&#44; (c&#44; a)&#44; (b&#44; 9)}
+                    </li>
+                </ol>
+                <b>Solution:</b> <var>A</var> <b>x</b> <var>B</var> = {(3&#44; a)&#44; (3&#44; b)&#44; (3&#44; c)&#44; (5&#44; a)&#44; (5&#44; b)&#44; (5&#44; c)&#44; (7&#44; a)&#44; (7&#44; b)&#44; (7&#44; c)&#44; (9&#44; a)&#44; (9&#44; b)&#44; (9&#44; c)}
+                <ol>
+                    <li>Since <var>R</var><sub>1</sub> is a subset of <var>A</var> <b>x</b> <var>B</var>&#46; So&#44; <var>R</var><sub>1</sub> is a relation from <var>A</var> to <var>B</var>&#46;</li>
+                    <li>Since <var>R</var><sub>2</sub> is a subset of <var>A</var> <b>x</b> <var>B</var>&#46; So&#44; <var>R</var><sub>2</sub> is a relation from <var>A</var> to <var>B</var>&#46;</li>
+                    <li> Here&#44; (b&#44; c) does not belongs to <var>A</var> <b>x</b> <var>B</var>&#46; So <var>R</var><sub>3</sub> is not subset of <var>A</var> <b>x</b> <var>B</var> and hence <var>R</var><sub>3</sub> is not a relation from <var>A</var> to <var>B</var>&#46;</li>
+                    <li>Since <var>A</var> <b>x</b> <var>B</var> does not contain (c&#44; a) and (b&#44; 9)&#44; so <var>R</var><sub>4</sub> is not a relation from <var>A</var> to <var>B</var>&#46;</li>
+                </ol>
+                <blockquote>
+                    <aside>
+                        <h3>Try Yourself</h3>
+                        <hr>
+                        Let <var>A</var> = {1&#44; 2&#44; 3}&#44; <var>B</var> = {2&#44; 4} and <var>R</var> = {(1&#44; 2)&#44; (2&#44; 2)&#44; (2&#44; 4)&#44; (3&#44; 4)}&#46; Is <var>R</var> a relation from <var>A</var> to <var>B</var>&#46;
+                    </aside>
+                </blockquote>
+                <h4>Representation of Relation : </h4>
+                <ol>
+                    <li>
+                        <dl>
+                            <dt><b>Roster Form :</b></dt>
+                            <dd>In this Form&#44; a relation is represented by the set of all ordered pairs belonging to <var>R</var>&#46;<br>
+                                If <var>R</var> is a relation from set <var>A</var> = {1&#44; 2&#44; 3&#44; 4} to set <var>B</var> = {1&#44; 4&#44; 9&#44; 16&#44; 25} such that as the second elements are square of the first elements&#46; So&#44; <var>R</var> can be written in roster form as<br>
+                                <var>R</var> = {(1&#44;1)&#44; (2&#44; 4)&#44; (3&#44; 9)&#44; (4&#44; 16)}
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><b>Set-builder form : </b></dt>
+                            <dd>
+                                In this form&#44; the relation <var>R</var> from set <var>A</var> to set <var>B</var> is represented as<br>
+                                <var>R</var> = {(x&#44; y): x<b>E</b><var>A</var>&#44; y<b>E</b><var>B</var>; The rules which associates x and y}
+                                <br>
+                                For Example: <var>R</var>= {(1&#44; 1)&#44; (2&#44; 4)&#44; (3&#44; 9)&#44; (4&#44; 16)} can be written in set builder form as<br>
+                                <var>R</var> = {(x&#44; y)&#58; x<b>E</b><var>A</var>&#44; y<b>E</b><var>B</var>; y=x<sup>2</sup>}&#44; where <var>A</var> = {1&#44; 2&#44; 3&#44; 4}&#44; <var>B</var> = {1&#44; 4&#44; 9&#44; 16}&#46;
+                                <br>
+                                <p>IT is not possible to represent every relation from set <var>A</var> to set <var>B</var> in set-builder form&#46; For example&#44; the relation <var>R</var> = {(5&#44; a)&#44; (7&#44; b)&#44; (9&#44; c)} from set <var>A</var> = {5&#44; 7&#44; 9} to set <var>B</var> = {a&#44; b&#44; c} cannot be represented in set-builder form&#46;</p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><b>Visual Representation(Arrow diagram)</b></dt>
+                            <dd>
+                                In this form of representation&#44; we draw arrows from first element to the second element for all ordered pairs belongings to <var>R</var>&#46;<br>
+                                <b>For example &#58;</b> let <var>R</var> = {(&minus;1&#44; 3)&#44; (2&#44; 12)&#44; (4&#44; 48)&#44; (5&#44; 75)} from set <var>A</var> = {&minus;1 &#44;2 &#44;4 &#44; 5} to set <var>B</var> = {3&#44; 12&#44; 48&#44; 75}&#46;<br>
+                                If can be represented by the following arrow diagram&#44;
+                            </dd>
+                        </dl>
+                        <svg>
+                            <ellipse cx="65" cy="70" rx="40" ry="70" fill="Yellow"/>
+                            <ellipse cx="175" cy="70" rx="40" ry="70" fill="Yellow"/>
+                            <text x="15" y="20" font-size="28" font-family="Ink Free">
+                                A
+                            </text>
+                            <text x="130" y="20" font-size="28" font-family="Ink Free">
+                                B
+                            </text>
+                            <text x="45" y="38" font-size="24" font-family="Ink Free">
+                                &minus;1
+                            </text>
+                            <text x="55" y="63" font-size="24" font-family="Ink Free">
+                                2
+                            </text>
+                            <text x="55" y="90" font-size="24" font-family="Ink Free">
+                                4
+                            </text>
+                            <text x="55" y="113" font-size="24" font-family="Ink Free">
+                                5
+                            </text>
+                            <text x="162" y="38" font-size="24" font-family="Ink Free">
+                                3
+                            </text>
+                            <text x="160" y="63" font-size="24" font-family="Ink Free">
+                                12
+                            </text>
+                            <text x="160" y="90" font-size="24" font-family="Ink Free">
+                                48
+                            </text>
+                            <text x="160" y="113" font-size="24" font-family="Ink Free">
+                                75
+                            </text>
+                            <line x1="70" y1="35" x2="158" y2="35" style="stroke:black" />
+                            <line x1="70" y1="57" x2="158" y2="57" style="stroke:black"/>
+                            <line x1="70" y1="82" x2="158" y2="82" style="stroke:black"/>
+                            <line x1="70" y1="105" x2="158" y2="105" style="stroke:black"/>
+                        </svg>
+                        <hr>
+                        <b>Illustration 5 :</b> Write the relation <var>R</var> = {(x&#44; x<sup>2</sup>)&#58; x is prime number less than 15} in roster form&#46;
+                        <br>
+                        <b>Solution :</b> <var>R</var> = {(2&#44; 8)&#44; (3&#44; 27)&#44; (5&#44; 125)&#44; (7&#44; 343)&#44; (11&#44; 1331)&#44; (13&#44; 2197)}<br>
+                        <br>
+                        <blockquote>
+                            <h3>Try Yourself</h3>
+                            <hr>
+                            <ol start="7">
+                                <li>
+                                    Let <var>R</var> = {(1&#44; &minus;1)&#44; (2&#44; 0)&#44; (3&#44; 1)&#44; (4&#44; 2)&#44; (5&#44; 3)}&#46; Then (i) write <var>R</var> in set-builder form  (ii)Represent <var>R</var> by arrow diagram&#46;
+                                </li>
+                                <li>
+                                    Let <var>A</var> = {1&#44; 2&#44; 3&#44; 4}&#44; <var>B</var> = {1&#44; 3&#44; 4&#44; 8}&#46; Let <var>R</var> = {(x&#44; y)&#58; x<b>E</b><var>A</var>&#44; y<b>E</b> <var>B</var> and x divides by y}&#46; Write <var>R</var> in Roster form&#46;
+                                </li>
+                                <li>
+                                    Let <var>A</var> = {1&#44; 2&#44; 3&#44; 4&#44; 5&#44; 6}&#46;Define the relation <var>R</var> from <var>A</var> to <var>A</var> by <var>R</var> = {(x&#44; y)&#44; y = x+1}&#46; Depict this relation using an arrow diagram&#46;
+                                </li>
+                                <li>
+                                    Define a relation <var>R</var> on the set <var>N</var> of all natural numbers by <var>R</var> = {(x&#44; y)&#58; y = x+5&#44; x is a natural number less than 4}&#46; Depict the relation using (i) Roster form (ii)Arrow diagram&#46;
+                                </li>
+                            </ol>
+                        </blockquote>
+                        <h4>Domain and Range of the Relation</h4>
+                        <blockquote>
+                            <b>Domain of the Relation :</b> Let <var>R</var> be a relation from <var>A</var> to <var>B</var>&#46; The domain of relation <var>R</var> is the set of all those elements a<b>E</b> A such that (a&#44; b)<b>E</b> <var>R</var> for some b<b>E</b>B&#46;<br>
+                            <br>
+                            Thus domain of <var>R</var> = {a <b>E</b> <var>A</var> &#58; (a&#44; b) <b>E</b> <b>R</b> for some b<b>E</b><var>B</var>}<br>
+                            <blockquote>
+                                = set of second elements of all the ordered pairs belongings to <var>R</var><br>
+                            </blockquote>
+                            <b>Range of the Relation :</b> Let <var>R</var> be the relation from <var>A</var> to <var>B</var>&#46; The range of <var>R</var> is the set of all those elements b<b>E</b><var>B</var> such that (a&#44; b) <b>E</b> <var>R</var> for some a<b>E</b> <var>R</var> for some a<b>E</b> <var>A</var>&#46;<br>
+                            <br>
+                            Thus range of <var>R</var> = {b <b>E</b> <var>B</var> &#58; (a&#44; b) <b>E</b> <var>R</var> for some a<b>E</b> <var>A</var>}
+                            <br>
+                            <blockquote>
+                                = set of second elements of all the ordered  apirs belonging to <var>R</var>&#46;
+                            </blockquote>
+                            <b>Co&minus;Domain of a Relation &#58;</b>  If <var>R</var> be a relation from <var>A</var> to <var>B</var>&#44; then <var>B</var> is called the co-domain of relation <var>R</var>&#46;
+                            <br>
+                            Clearly range of relation (belong to and equal to)<b>C</b> co-domain&#46;
+                        </blockquote>
+                        <hr>
+                        <b>Illustration 6&#58; </b> Let <var>A</var> = {1&#44; 2&#44; 3&#44; 5} and <var>B</var> = {3&#44; 4}&#46; Write down the domain&#44; range and co-domain of the relation given by <var>R</var> = {(a&#44; b) &#58; a <b>E</b> <var>A</var>&#44; b <b>E</b> <var>B</var>; a &#60; b}&#46;<br>
+                        <b>Solution &#58;</b> <var>R</var> = {(1&#44; 3)&#44; (1&#44; 4)&#44; (2&#44; 3)&#44; (2&#44; 4)&#44; (3&#44; 4)}<br>
+                        <blockquote>
+                            here domain of <var>R</var> = {1&#44; 2&#44; 3}<br>
+                            and range of <var>R</var> ={3&#44; 4}
+                            co-domain of <var>R</var> = <var>B</var> = {3&#44; 4}
+                        </blockquote>
+                    </li>
+                    <blockquote>
+                        <h3>Try yourself</h3>
+                        <hr>
+                        <ol start="11">
+                            <li>
+                                Given <var>R</var> = {(x&#44; x<sup>3</sup>); x is prime number less than 10}<br>
+                                Find the domain and range of the relation <var>R</var>&#46;
+                            </li>
+                            <li>
+                                Let a <var>R</var> be the relation on the set <em>N</em> of all natural numbers defined by a = 3b = 12&#46; Find the domain and range of <var>R</var>&#46;
+                            </li>
+                        </ol>
+                    </blockquote>
+                    <b>Relation on a set &#58;</b> A relation <var>R</var> from a non-empty set <var>A</var> to itself is called a relation on <var>A</var>&#46;<br>
+                    in other words&#44; if <var>A</var> is a non-empty set&#44; then a subset of <var>A</var><b>x</b><var>A</var> is called a relation of <var>A</var>&#46;
+                    <hr>
+                    <b>Illustration 7 &#58;</b> Given <var>A</var> = {1&#44; 2}&#46; List all the relation on A&#46;
+                    <b>Solution &#58;</b> Given <var>A</var> = {1&#44; 2}
+                    <br>
+                    Now&#44; <var>A</var><b>x</b><var>A</var> = {(1&#44; 1)&#44; (1&#44; 2)&#44; (2&#44; 1)&#44; (2&#44; 2)}<br>
+                    &therefore; Number of subsets of <var>A</var><b>x</b><var>A</var> = 2<sup>4</sup> = 16<br>
+                    &therefore; Number of relation on <var>A</var> = 16<br>
+                    <br>
+                    <b>Total Number of Relations</b>
+                    <blockquote>
+                        Let <var>A</var> and <var>B</var> be two non-empty finite sets having <em>p</em> and <em>q</em> elements respectively&#46;
+                        <br>
+                        then <em>n</em>(<var>A</var><b>x</b><var>B</var>) = <em>n</em>(<var>A</var>)<em>n</em>(<var>B</var>) = <em>pq</em><br>
+                        &therefore; Total number of subsets of <var>A</var> <b>x</b> <var>B</var> = 2<sup>pq</sup><br>
+                        Since each subset of the given relation from <var>A</var> to <var>B</var>&#44; therefore total number of relation from <var>A</var> to <var>B</var> is 2<sup>pq</sup>&#46;
+                    </blockquote>
+                    <hr>
+                    <b>Illustration 8 &#58;</b> Let <var>A</var> = {1&#44; 2}&#44; <var>B</var> = {3&#44; 4&#44; 5}&#46; Find the number of relation from <var>A</var> to <var>B</var>&#46;
+                    <br>
+                    <b>Solution &#58;</b> n(<var>A</var><b>x</b><var>B</var>) = <em>n</em>(<var>A</var>) <em>n</em>(<var>B</var>) = 6<br>
+                    &therefore; total number of relations from <var>A</var> to <var>B</var> = 2<sup>6</sup> = 64 <br>
+                </ol>
+            </blockquote>
+        </section>
+        <hr>
+        &#4; &#4; &#4; &#4; &#4; &#4; &#4; &#4; &#4;   &#46;&#46;&#46; <i>to be continued</i>
+        <footer>
+            <address>
+                This Site is made by <u>Nitish Kumar</u>
+                @copyright&copy; 2022
+            </address>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            MENU List in forms
+        </title>
+    </head>
+    <body>
+        <h1>MENU</h1>
+        <form>
+            <fieldset>
+                <legend>Drop-Down Menu</legend>
+                <p>First way to make Drop-down Menu</p>
+                <h2>select your favourite color</h2>
+                <select name="Color">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                    <option>Orange</option>
+                    <option>White</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Using Datalist</legend>
+                <p>Select Your Fav Color&quest;;</p><input list="Color" name="Color">
+                <datalist id="Color">
+                    <option value="Red"/>
+                    <option value="Blue"/>
+                    <option value="Indego"/>
+                    <option value="Whitesmoke"/>
+                    <option value="Violet"/>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Scrolling Menu</legend>
+                <p>Select <strong><u>Any Two</u>(Select two of them)</strong>&#58;
+                    <select name="Color" size="5" multiple>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                        <option>Orange</option>
+                        <option>Indego</option>
+                        <option>Light Blue</option>
+                        <option>Pink</option>
+                        <option>Brown</option>
+                        <option>Whitesmoke</option>
+                        <option>Slate</option>
+                        <option>Green</option>
+                </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Scrolling Menu(Group List)</legend>
+                <p>Select <strong><u>Any Two</u>(Select two of them)</strong>&#58;
+                    <select name="Color" size="5" multiple>
+                        <optgroup label="Main Color">
+                            <option>Red</option>
+                            <option selected >Blue</option>
+                            <option>Black</option>
+                            <option>Orange</option>
+                            <option>Indego</option>
+                        </optgroup>
+                        <optgroup label="Optional">
+                        <option>Light Blue</option>
+                        <option>Pink</option>
+                        <option>Brown</option>
+                        <option>Whitesmoke</option>
+                        <option>Slate</option>
+                        <option>Green</option>
+                        </optgroup>
+                </select>
+                </p>
+            </fieldset>
+            <input type="Submit" value="Click Here">
+        </form>
+    </body>
+</html>

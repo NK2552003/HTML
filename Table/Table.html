@@ -1,0 +1,93 @@
+<!DOCTYpe html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Table
+        </title>
+    </head>
+    <body>
+        Inserting the <strong>table</strong> in the webpage<hr>
+       <table border="2">
+           <caption>Basic information about Junk Food</caption>
+           <tr>
+               <th colspan="3">Data</th>
+           </tr>
+            <tr>
+                <th>Menu Item</th>
+                <th>Calories</th>
+                <th>Fat(g)</th>
+            </tr>
+            <tr>
+                <td>Chicken noodle soup</td>
+                <td>120</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Caesar salad</td>
+                <td>400</td>
+                <td>26</td>
+            </tr>
+        </table><br>
+
+        <table border="1">
+            <caption>Food Information</caption>
+            <tr>
+                <th rowspan="3"> Food</th>
+            </tr>
+            <tr>
+                <th>Burders</th>
+                <td>Organic grass-fed beef</td>
+                <td>Black Bean Veggie</td>
+            </tr>
+            <tr>
+                <th>Fries</th>
+                <td>Hand-cut Idaho potato</td>
+                <td>Seasoned sweet potato</td>
+            </tr>
+        </table>
+        <br>
+        <table border="2">
+            <tr>
+                <th scope="row">Mars</th>
+                <td>.95</td>
+                <td>.62</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <br>
+        <!--using thead, tbody, tfoot insted of basic attributes-->
+        <table border="1" id="Wards">
+            <caption>Data of my Siblings</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>RollNo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nitish</td>
+                    <td>Dropper</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Himanshi</td>
+                    <td>B.A.(Hons)</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Neha</td>
+                    <td>9<sup>th</sup></td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">My Wards Data</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

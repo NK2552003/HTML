@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Making the connection succeded page
+        </title>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>User Login</legend>
+                <label for="firstlast">Name&#58;&nbsp;<input tpye="text" name="firstlast" size="50" minlength="12" maxlength="45"
+                     placeholder="Full Name" required></label>
+            </fieldset>
+            <input type="submit" value="Submit it">
+            <input type="hidden" name="success_link" value="https://www.example.com/thankyou.html">
+            <!-- will not give the response until there is not application or script is linked to it-->
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <meta charset="utf-8">
+            <title>
+                Ither Form Elements
+            </title>
+        </title>
+    </head>
+    <body>
+        <h1>Other form Elements</h1>
+        <form action="" method="post">
+            <fieldset> <!-- needs a script to show it to them in the status as a percentage-->
+                <legend>
+                    Progress
+                </legend>
+                <label for="progress">Progress Completion&#58;&nbsp;<progress max="100" id="download">0</progress></label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Meter
+                </legend>
+                <label for="meter">Meter&#58;&nbsp;<meter max="100" min="5" name="length">90%</meter></label>
+            </fieldset>
+        </form>
+        <br>
+        <br>   <!--will not return value until there is no javascript-->
+        <form onsubmit="return false" oninput="o.value = a.valuenumber + b.valuenumber">
+            <input name="a" type="number" step=any> + <input name="b" type="number" step="any"> = <output name=o for="a b"></output>
+        </form>
+    </body>
+</html>
