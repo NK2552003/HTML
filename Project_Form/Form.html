@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            ORDER OF PIZZA
+        </title>
+    </head>
+    <body>
+        <style>
+            body{
+                font-size:26px;
+                margin:3%;
+                background-color:whitesmoke;
+            }
+            input{
+                block-size:32px;
+                font-size:24px;
+            }
+            h2{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align:center;
+            }
+            textarea{
+                background:transparent;
+                font-size:26px;
+            }
+        </style>
+        <fieldset>
+            <p>
+                <h2>Black Goose Bistro | Pizza-on-Demand<br> </h2>
+                <br>
+                Our 12<sup>"</sup> wood-fired pizzas are availabe for delivery&#46; Build your
+                custom pizza and we&apos;ll deliver it within as hour&#46;<br>
+                <br>
+            </p>
+            <section id="form">
+                <form action="" method="post" id="form-order"> 
+                    <fieldset>
+                        <legend><b>Your Information</b></legend>
+                        <label for="name">Name&ast;&#58;&ensp;<input name="customername" type="text" id="name" placeholder="Enter the receiver name" size="30" maxlength="50" minlength="3" required></label><br>                 
+                        <label for="address">Address&ast;&#58;&ensp;<input type="text" name="address" id="address" size="35" maxlength="30" minlength="10" placeholder="Enter the receiver address" required></label><br>
+                        <label for="phone_no">Telephone Number&ast;&#58;&ensp;<input type="text" size="1" name="Country_code" value=" &plus;91">&ensp;<input name="telephone" id="Telephone_number" type="tel" size="10" maxlength="10" minlength="10" placeholder="Phone Number" required></label><br>
+                        <label for="Email">Email&ast;&#58;&ensp;<input type="email" name="email" id="email" size="30" maxlength="30" minlength="10" placeholder="Enter Email Here" required></label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Date to Deliver</b></legend>
+                        <label for="Date">Date&ast;&#58;&nbsp;<input type="date" name="date" value="2022-04-01" min="2022-04-01" max="2022-04-24"></label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Delivery Instruction</b></legend>
+                        <textarea name="instructions" rows="5" cols="80" maxlength="400" placeholder="Delivery Instructions" wrap="hard"></textarea><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><strong>Design Your Dream Pizza&#58;</strong></legend>
+                        <h3>Pizza Specs</h3>
+                        <br>    
+                        <b>Crust (Choose one)&ast;&#58;</b>
+                        <blockquote>
+                            <label for="Crust"><input type="radio" name="crust" id="crust" value="Classic White">Classic White</label><br>
+                            <label for="Crust"><input type="radio" name="crust" id="crust" value="Multigrain">Multigrain</label><br>
+                            <label for="Crust"><input type="radio" name="crust" id="crust" value="Cheese-stuffed">Cheese-stuffed crust</label><br>
+                            <label for="Crust"><input type="radio" name="crust" id="crust" value="Gluten-free">Gluten-free</label><br>                    
+                        </blockquote>
+                        <b>Topping (Choose as Many as you want)&#58;</b>
+                        <blockquote>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Red Sauce" selected multiple>Red Sauce</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="White Sauce" multiple>White Sauce</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Mozzarella Cheese" multiple>Mozzarella</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Pepperoni" multiple>Pepperoni</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Mushrooms" multiple>Mushrooms</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Peppers" multiple>Peppers</label><br>
+                            <label for="Topping"><input type="Checkbox" name="topping" id="topping" value="Anchovies" multiple>Anchovies</label><br>
+                        </blockquote>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Number</legend>
+                        How Many pizzas&ast;&#58;<input type="number" size="1" max="6" min="1" value="1" required>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Bring me a pizza&excl;">&ensp;<input type="reset" value="Reset">
+                </form>
+            </section>
+        </fieldset>
+    </body>
+</html>
