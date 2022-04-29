@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="uft-8">
+        <title>
+            Object
+        </title>
+        <style>
+            h1{
+                text-align:center;
+                font-family:'ink free';
+                font-size:36px;
+                color:blueviolet;
+            }
+            kbd{
+                font-family:san-serif;
+                font-style:italic;
+            }
+            p{
+                font-family:'Ink Free';
+                font-size:26px;
+                margin-left:5%;
+                margin-right:5%; 
+            }
+            code{
+                font-family:san-serif;
+                font-size:24px;
+            }
+            ol{
+                font-family:'Kristen ITC';
+                font-size:24px;
+            }
+            object{
+                margin-left:25%;
+            }
+            fieldset{
+                background-color: azure;
+            }
+            body{
+                background-color: whitesmoke;
+            }
+            legend{
+                font-family:'kristen ITC';
+                font-size:22px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="content">
+            <h1>This Webpage is for <kbd>Object</kbd> Element to insert the multipurpose embedder</h1>
+            <ol>
+                <li><a href="#Intro">Introduction</a></li>
+                <li><a href="#more">Parameters</a></li>
+                <li><a href="#example"> Main Example of all this Work</a></li>
+                <li><a href="#end">End of the page</a></li>
+            </ol>
+        </section>
+        <fieldset>
+            <legend>Information</legend>
+            <section id="Intro">
+                <p>
+                    <kbd>Object</kbd> Works like <kbd>iframe</kbd> but their is a slight difference between them which is about the editing&#46; <br>
+                    we can use the custom player or script using <kbd>object</kbd> element but in <kbd>iframe</kbd> We can&apos;t&#46;
+                    <br>
+                    <br>
+                    <kbd>Object</kbd> uses <kbd>data</kbd> to poin the source location&#46;<br>
+                    other attributes will be the same as we used in <kbd>iframe</kbd>
+                    <br>
+                    We also need to insert the File type using <kbd>type</kbd> attribute inside the <kbd>Object</kbd> element&#46;<br>
+                </p>
+            </section>
+        </fieldset>
+        <br><br>
+        <object data="./1.jpg" type="image/jpg" width="700" height="450" frameborder="o">  <!--Only use when you want to use your own script or app or player-->
+        </object>
+        <br><br>
+        <fieldset>
+            <legend>Parameter</legend>
+            <section id="more">
+                <p>
+                    <strong>And yeah</strong> there is one more thing that i want to tell yout that this element also need parameters to make the player run for example&#58;<br>
+                    <code>
+                        <blockquote>
+                            &#60;param name&#61;<q>autoplay</q> value&#61;<q>true</q>&#62;<br>
+                            &#60;param name&#61;<q>controller</q> value&#61;<q>true</q>&#62;<br>
+                            &#60;param name&#61;<q>loop</q> value&#61;<q>false</q>&#62;<br>
+                        </blockquote>
+                    </code>
+                    <p>Here is one of the following example that uses <kbd>param</kbd></p>
+                </p>
+            </section>
+        </fieldset>
+        <br>
+        <section id="example">
+            <object data="./34.mp4" type="video/mp4" title="VIdeo Player" width="509" height="900" frameborder="0">
+                <param name="autostart" value="false">
+                <param name="loop" value="true">
+                <param name="controller" value="true">
+            </object>
+        </section>
+        <hr>
+        <hr>
+        <section id="end">
+            <footer>
+                <address>&copy; Copyright 2022</address>
+                Made by <ins>Nitish Kumar</ins>
+            </footer>
+        </section>
+        <a href="#content">go up</a>
+    </body>
+</html>
