@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Video</title>
+        <style>
+            h1{
+                font-family:'Ink Free';
+                text-align:center;
+                font-size:36px;
+            }
+            fieldset{
+                font-family:'Ink Free';
+                font-size: 26px;
+                background-color: beige;
+            }
+            body{
+                background-color: whitesmoke;
+            }
+            h2{
+                font-family:'Ink Free';
+            }
+            video{
+                margin-left:10%;
+            }
+            legend{
+                font-family:'Kristen ITC';
+                font-size:24px;
+            }
+            a{
+                font-family:'Kristen ITC';
+                font-size:20px;
+            }
+            kbd{
+                font-family:sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="front">
+        <h1>This Webpage is for inserting a video using <kbd>Video</kbd> element</h1>
+        </section>
+        <ol>
+            <li><a href="#B_Info">BAsic Information</a></li>
+            <li><a href="#basic">Adding video to the webpage</a></li>
+            <li><a href="#U_version">Unknown Browser</a></li>
+            <li><a href="#track">Inserting video with track</a></li>
+            <li><a href="#end">End of the Page</a></li>
+        </ol>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <section id="B_Info">
+                <p>Before starting this Content we must need to get to know that which type of video is better and supported to your browser
+                    if you don&apos;t then you need to know about encoding types
+                    <b>Things that you need to keep in mind are</b>&#58;<br>
+                    <blockquote>
+                        1<sup>st</sup> is make sure that how your media is encoded( how media is encrypted in binary numbers algorithm)
+                        and the method which is used to encode the media is <var>CODEC</var> what it basically did is code/decode
+                        compress or decompress the media&#46;
+                        <br>
+                        2<sup>nd</sup> thing you need to get to know that where or in which container this codec is stored&#46;
+                        Basically you can see it like a <var>Zip</var> file which store the compressed files&#46;
+                    </blockquote>
+                    <u>Some most popular media types (video) are</u>&hyphen;<br>
+                    <ol>
+                        <li>
+                            <kbd>MPEG&hyphen;4</kbd> container + <kbd>H&#46;264</kbd> video codec + <kbd>AAC</kbd> audio codec<br>
+                            <i>suffixes</i> are &#46;mp4 &#44; &#46;m4a
+                        </li>
+                        <li>
+                            <kbd>WebM</kbd> container + <kbd>VP8</kbd> video codec + <kbd>Vorbis</kbd> audio codec<br>
+                            <i>suffixes</i> are &#46;webm
+                        </li>
+                        <li>
+                            <kbd>WebM</kbd> container + <kbd>VP9</kbd> video codec + <kbd>opus(libopus)</kbd> audio codec<br>
+                            <i>suffixes</i> are &#46;webm
+                        </li>
+                        <li>
+                            <kbd>ogg</kbd> container + <kbd>theora</kbd> video codec + <kbd>vorbis</kbd> audio codec<br>
+                            <i>suffixes</i> are &#46;ogg and &#46;ogv
+                        </li>
+                        <li>
+                            <kbd>HEVC</kbd> container + <kbd>H&#46;265</kbd> video codec + <kbd>AAC</kbd> audio codec<br>
+                            <i>suffixes</i> are &#46;hevc
+                        </li>
+                    </ol>
+                    <blockquote>These were the codecs that we&apos;ll use in this Webpage&#46;</blockquote>
+                    <h3>Now the Question arises how will we use it&quest;</h3>
+                    just set the <kbd>type</kbd> to <var>video/suffix</var>
+                </p>
+            </section>
+        </fieldset>
+        <section id="basic">
+            <h2>Adding Video to the Webpage</h2>
+            <hr>
+            <video src="./Type/12.mp4" controls loop allowfullscreen width="450" height="800" preload="metadata" type="video/mp4">
+                <!--When you Know which version of browser you are running right now(Should be latest)-->
+            </video>
+        </section>
+        <!--If you don't know which version is it you can use differ type of files(video element works as fallback element)-->
+       <section id="U_version">
+            <h2>Inserting Video on Webpage when you do not know what version a user is running now</h2>
+            <hr> 
+            <video controls loop allowfullscreen preload="auto" width="450" height="800">
+                <source src="./Type/12.mp4" type="video/mp4">
+                <source src="./Type/12_MKV.mkv" type="video/mkv">
+                <source src="./Type/12_MP4.m4v" type="video/m4v">
+                <source src="./Type/12_Webm.webm" type="video/webm"> <!--webm where vorbis is the audio codec-->
+                <source src="./Type/12_Webm_opus.webm" type="video/webm"><!-- webm where obus is the audio codec-->
+                Your Device does not support the given codec try<a href="./Type/12.mp4">Downloading</a> the video
+            </video>
+       </section>
+       <section id="track">
+            <h2>Inserting the video with subtitles</h2>
+            <hr>
+            <video width="900" height="505" preload="auto" controls allowfullscreen poster="./poster/poster.jpg">
+                <source src="./music/1.mp4" type="video/mp4">
+                if not supported <a href="./music/1.mp4">Download</a>
+                <track src="./tracks/en.vtt" kind="captions" srclang="en" label="English">
+            </video>
+       </section>
+       <hr><hr>
+       <section id="end">
+            <footer>
+                <address>&copy; copyright 2022</address>
+                Made by <ins>Nitish Kumar</ins>
+                <del>This is Not the codied source so do not copyright it</del>
+            </footer>
+       </section>
+       <a href="#front">Top of the page</a>
+    </body>
+</html>
