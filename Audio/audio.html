@@ -1,0 +1,31 @@
+<!DOCTYPe html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Audio
+        </title>
+        <style>
+            body{
+                font-family:'Ink Free';
+                background-color: aquamarine;
+                margin-left:3%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Making a webpage which is for audio file(Basic)</h1>
+        <audio controls loop preload="auto" autoplay>
+            <source src="./type/Solo.mp3">
+        </audio>
+        <h2>Unknown Browser</h2>
+        <audio controls loop preload="auto" muted>
+            <source src="./type/Solo.mp3" type="audio/mp3">
+            <source src="./type/Solo.m4a" type="audio/m4a">
+            <source src="./type/Solo.ogg" type="audio/ogg">
+            <source src="./type/Solo.webm" type="audio/webm">
+            Your browser does not support this audio try downloading it
+            <a href="./type/Solo.mp3">Solo Download</a>
+        </audio>
+    </body>
+</html>
