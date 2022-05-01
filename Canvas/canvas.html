@@ -1,0 +1,65 @@
+<!DOCTYpe html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Canvas Image
+        </title>
+    </head>
+    <body>
+        <p>
+            <h1>Making the inage using canvas javascript</h1>
+        </p>
+        <script type="text/javascript">
+            window.addEventListener('load',eventWindowLoaded,false);
+            function eventWindowLoaded(){
+                canvasApp();
+            }
+            function canvasApp(){
+                var theCanvas= documnet.getElementById('my_canvas');
+                var my_canvas=theCanvas.getContext('2d');
+                // now draw a border around the canvas
+                my_canvas.strokeRect(0,0,200,255);
+                //draw face
+                my_canvas.beginpath();
+                my_canvas.arc(100,100,75,(Math.PI/180)*0,(Math.PI/180)*360,false);
+                //circle Dimension
+                my_canvas.strokeStyle = "black"; //circle outline is black
+                my_canvas.linewidth = 3;   //outline is 3px wide
+                my_canvas.fillStyle = "yellow"; // fill circle with yellow
+                my_canvas.stroke();  //draw circle
+                my_canvas.fill(); //fill in circle
+                my_canvas.closepath();
+                 // now, draw left eye
+                my_canvas.fillStyle = "black"; // switch to black for the fill
+                my_canvas.beginPath();
+                my_canvas.arc(65, 70, 10, (Math.PI/180)*0, (Math.PI/180)*360, false); 
+                // circle dimensions
+                my_canvas.stroke(); // draw circle
+                my_canvas.fill(); // fill in circle
+                my_canvas.closePath();
+                // now, draw right eye
+                my_canvas.beginPath();
+                my_canvas.arc(135, 70, 10, (Math.PI/180)*0, (Math.PI/180)*360, false);
+                // circle dimensions
+                my_canvas.stroke(); // draw circle
+                my_canvas.fill(); // fill in circle
+                my_canvas.closePath();
+                // draw smile
+                my_canvas.lineWidth = 6; // switch to six pixels wide for outline
+                my_canvas.beginPath();
+                my_canvas.arc(99, 120, 35, (Math.PI/180)*0, (Math.PI/180)*-180, false);
+                // semicircle dimensions
+                my_canvas.stroke();
+                my_canvas.closePath();
+                // Smiley Speaks!
+                my_canvas.fillStyle = "black"; // switch to black for text fill
+                my_canvas.font = '20px _sans'; // use 20 pixel sans serif font
+                my_canvas.fillText ("Hello Canvas!", 45, 200); // write text
+            }
+        </script>
+        <canvas width="1400" height="400">
+
+        </canvas>
+    </body>
+</html>
