@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            canvas_2
+        </title>
+        <meta charset="utf-8">
+        <style>
+            #canvas{
+                background-color: aqua;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <h1> Making the canvas bittmapped surface for work&#46;</h1>
+        </p>
+        <canvas id="canvas" width="700" height="450">
+        </canvas>
+        <script>
+            var c = document.getElementById('canvas');
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#WW0000";
+            ctx.fillRect(80,70,500,300);
+        </script>
+    </body>
+</html>

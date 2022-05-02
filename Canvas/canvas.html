@@ -16,7 +16,7 @@
                 canvasApp();
             }
             function canvasApp(){
-                var theCanvas= documnet.getElementById('my_canvas');
+                var theCanvas= documnet.getElementById('my_first_canvas');
                 var my_canvas=theCanvas.getContext('2d');
                 // now draw a border around the canvas
                 my_canvas.strokeRect(0,0,200,255);
@@ -58,7 +58,7 @@
                 my_canvas.fillText ("Hello Canvas!", 45, 200); // write text
             }
         </script>
-        <canvas width="1400" height="400">
+        <canvas id="my_first_canvas">
 
         </canvas>
     </body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Canvas Project
+        </title>
+        <style>
+            #my_first_canvas{
+                background-color: aqua;
+                border: black 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="my_first_canvas" width="600" height="500">
+
+        </canvas>
+        <script>
+            var canvas = document.getElementById(my_first_canvas);
+            if (canvas.context){
+            var ctx = canvas.context('2d');
+            }  
+            else{
+                //canvas code unsupported
+            }
+        </script>            
+    </body>
+</html>

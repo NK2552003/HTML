@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Canvas Introduction
+        </title>
+        <meta charset="utf-8">
+        <style>
+            #my_first_canvas{
+                background-color:aqua;
+                border:3px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <h1>This Webpage is the introduction of <kbd>CANVAS</kbd></h1>
+            <dl>
+                <dt>canvas</dt>
+                <dd>
+                    <kbd>Canvas</kbd> element provide HTMl a bitmapped surface to work with&#46;
+                    <br>
+                    It is used to draw the graphics on the webpage&#46;<br>
+                    <code>
+                        &#60;canvas id=<q></q> width=<q></q> height=<q></q>&#62;<br>
+                        &#60;canvas&#62;<br>
+                    </code>
+                    <strong> And that&apos;s it&#46; this is only the thing that you need to do in this code of you have the predesigned code then use it&#46;</strong>
+                </dd>
+            </dl>
+        </p>
+        <h2>CODING OUTPUT</h2>
+        <canvas id="my_first_canvas" width="700" height="450">        <!--First Step-->
+            This Script is not supported to your browser  <!--will be shown if not attached or the version done not support it-->
+        </canvas>
+        <p>
+            <i> 
+                the Thing is it&apos;ll not show any output<br>
+                Just blank with not canvas Outlines means we will not get to see our work without making any script&#46;
+            </i>
+        </p>
+        <p>
+            <h4>Making Script to demonstrate the work</h4>
+            <h5>Let us go with the simple one</h5>
+            <dl>
+                <dt>Script</dt>     <!--step 2-->
+                <dd>
+                    <code>
+                        &#60;script&#62;<br>
+                        <q>var #AnyVariable(let us say <q>c</q>) = document&#46;getElementbyId(<q>#ID_OF_THE_CANVAS</q>)</q><br>    <!-- taken as my_first_canvas-->
+                        <q>var c_context = c&#46;getContext(<q>2d</q>)</q><br>     <!--Important to give it while making this file-->
+                        <!--Now Draw the Rectangle as a sample-->
+                        <q>c_context&#46;fillStyle = <q>color in hexadecimal</q></q><br>   <!--used to fill the rectangle-->
+                        <q>c_context.fillRect(x1,y1,x2,y2)</q><br>  <!-- rectangle coordinates in 2 dimensional array-->
+                        &#60;/script&#62;
+                    </code><br><br>
+                    <strong>That&apos;s it&#46;</strong>
+                </dd>
+            </dl>
+        </p>
+        <!--step 2 Input-->
+        <script>
+            var canvas = document.getElementById("my_first_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000" ;
+            ctx.fillRect(80,70,400,200);
+        </script>
+    </body>
+</html>
