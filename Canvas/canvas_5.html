@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Canvas example with various methods </title>
+        <script>
+            window.onload=function() {
+                var w3rcanvas=document.getElementById("w3rCanvasTag");
+                var w3rcontext=w3rcanvas.getContext('2d');
+                w3rcontext.fillStyle='rgb(0,0,255)'; //Sets the color used for filling an area 
+                w3rcontext.fillRect(0,0,400,400);   //Fills a rectangle positioned at x and y, with a width and height of w and h.
+                w3rcontext.fillStyle='rgb(255,0,0)';  
+                w3rcontext.fillRect(50,50,300,300);    
+                w3rcontext.fillStyle='rgb(0,255,0)';  
+                w3rcontext.fillRect(100,100,200,200);
+                w3rcontext.fillStyle='rgb(100,100,100)';  
+                w3rcontext.fillRect(125,175,150,25);
+            }  
+        </script>
+    </head>
+    <body>
+        <div>
+            <canvas id="w3rCanvasTag" width="400" height="400"></canvas>
+        </div>
+    </body>
+</html>
