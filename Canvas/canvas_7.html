@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            canvas Smile
+        </title>
+    </head>
+    <body>
+        <canvas id="Id" width="700" height="600">
+            This script is not supported
+        </canvas>
+        <script>
+            var canvas=document.getElementById("Id");
+            var ca_ctx=canvas.getContext('2d');
+            ca_ctx.fillStyle='aqua';
+            ca_ctx.fillRect(170,70,400,400);
+               //ill draw the Rectangle filled will yellow color
+            //now make the border of the rectangle
+            ca_ctx.fillStyle="black";
+            ca_ctx.linewidth=3;
+            ca_ctx.strokeRect(170,70,400,400);
+            //now make the circle
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="yellow";
+            ca_ctx.strokeStyle="blue";
+            ca_ctx.linewidth=3;
+            ca_ctx.arc(367,250,140,(Math.PI/180)*0,(Math.PI)/180*360);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            //now make the left eye
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="black";
+            ca_ctx.linewidth=3;
+            ca_ctx.arc(310,220,30,(Math.PI/180)*0,(Math.PI)/180*360);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            //now draw the right eye
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="black";
+            ca_ctx.linewidth=3;
+            ca_ctx.arc(420,220,30,(Math.PI/180)*0,(Math.PI)/180*360);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            //Now make it's mouth
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="red";
+            ca_ctx.linewidth=3;
+            ca_ctx.fillStroke="black";
+            ca_ctx.arc(364,290,70,(Math.PI/180)*0,(Math.PI)/180*-180);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            //text the desired font text
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="brown";
+            ca_ctx.font="30px Arial";
+            ca_ctx.fillText("Be Happy",300,430);
+            ca_ctx.closePath();
+        </script>
+    </body>
+</html>

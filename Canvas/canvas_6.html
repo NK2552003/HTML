@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Method 2 to insert the script
+        </title>
+        <meta charset="utf-8">
+        <script>
+            window.onload=function() {
+                var canvas=document.getElementById("Id");
+                var canvas_context=canvas.getContext('2d');
+                canvas_context.fillStyle='rgb(250,0,0)';
+                canvas_context.fillRect(70,70,400,150);
+                canvas_context.fillStyle='rgb(67,80,450)';
+                canvas_context.fillRect(90,90,400,150);
+                canvas_context.fillStyle='rgb(30,23,250)';
+                canvas_context.fillRect(110,110,400,150);
+            }
+        </script>
+        <style>
+            canvas{
+                background-color: aquamarine;
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Canvas Method 2</h1>
+        <canvas id="Id" width="700" height="450">
+        </canvas>
+    </body>
+</html>
