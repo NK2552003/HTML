@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+    <head>
+        <title>M</title>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        window.onload=function() {
+            var canvas=document.getElementById("Id");
+            var ca_ctx=canvas.getContext('2d');
+            var grad=ca_ctx.createRadialGradient(70,15,23,30,40,100);
+            grad.addColorStop(0,"red");
+            grad.addColorStop(1,"yellow");
+            ca_ctx.fillStyle=grad;
+            ca_ctx.fillRect(30,30,400,200);
+        }
+    </script>
+    <body>
+        <canvas id="Id" width="700" height="450">
+            thi file is not supported
+        </canvas>
+    </body>
+</html>
