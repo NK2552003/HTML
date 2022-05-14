@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            CANVAS
+        </title>
+        <style>
+            #Id{
+                background-color:aqua;
+                border: 3px black solid;
+            }
+        </style>
+
+    </head>
+    <body>
+        <canvas id="Id" width="700" height="450">
+        </canvas>
+        <script>
+            //Main Part of the canvas script
+            var canvas=document.getElementById('Id');
+            var ca_ctx=canvas.getContext("2d");
+              //part where all the drawind or 2d things will start
+
+              //making rectangle with red color and border blue
+            ca_ctx.fillStyle="red";
+            ca_ctx.fillRect(20,20,400,200);
+            ca_ctx.fillStroke="blue";
+            ca_ctx.strokeRect(20,20,400,200);
+            
+            //making smile
+            //draw the circle
+            ca_ctx.beginPath();
+            ca_ctx.arc(440,340,100,0,Math.PI*2);
+            ca_ctx.fillStyle="yellow";  //choosing the color to fill in the circle
+            ca_ctx.stroke();  // will draw the circle on canvas
+            ca_ctx.fillStroke="blue";   //border color
+            ca_ctx.fill();    // fill the circle with given parameters and values
+            ca_ctx.closePath();
+            
+            // mouth of smile
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="red";
+            ca_ctx.strokeStyle="black";
+            ca_ctx.arc(440,360,70,0,-Math.PI);    // will make the half circle
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            
+            // remember one thing that you must use beginPath and closePath in order to hide the joint between two circles or arcs 
+            //otherwise the line joining two arc will be shown
+            //now make the left eye of the smile
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="black"
+            ca_ctx.strokeStyle="white"
+            ca_ctx.arc(405,320,20,0,Math.PI*2);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+            
+            //make the second eye of the smile
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="black"
+            ca_ctx.strokeStyle="white"
+            ca_ctx.arc(475,320,20,0,Math.PI*2);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+
+            //line joining the begining and the end of drawn semicircle in smile with black color
+            ca_ctx.beginPath();
+            ca_ctx.strokeStyle="black";
+            ca_ctx.moveTo(370,360);      // initial position
+            ca_ctx.lineTo(510,360);    //final position
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            ca_ctx.closePath();
+
+            // text inside the first drawn rectangle
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="white";
+            ca_ctx.font="40px 'Ink Free'";
+            ca_ctx.fillText("Fuck You Lad",190,200);
+            ca_ctx.closePath();
+
+            //text inside the first drawn rectangle
+            ca_ctx.beginPath();
+            ca_ctx.fillStyle="aqua";
+            ca_ctx.font="36px 'Ink Free'";
+            ca_ctx.fillText("Let me tell you one thing",30,100);
+            ca_ctx.closePath();
+
+            //making the Linear Gradient 
+            ca_ctx.beginPath();
+            var grad=ca_ctx.createLinearGradient(40,40,300,0);    //must use in order to make the linear gradient   "createLinearGradient(x1,y1,x2,y2)"
+            grad.addColorStop(0,"blue");   //first choosen color
+            grad.addColorStop(1,"violet");  //second choosen color
+            ca_ctx.fillStyle=grad;        //fill it with linear gradient
+            ca_ctx.fillRect(30,250,300,150);
+            ca_ctx.closePath();
+
+            //making the Radial Gradient
+            //must choose x0,y0,r0,x1,y1,r1 wisely in order to make it visible on the canvas sheet
+            var grad=ca_ctx.createRadialGradient(460,65,200,450,40,5);
+            grad.addColorStop(0,"red");
+            grad.addColorStop(1,"white");
+            ca_ctx.fillStyle=grad;
+            ca_ctx.fillRect(450,30,200,180);
+
+            //Making Ellipse   "cancvasPath.ellipse(x1,y1,r1,r2,angle:number,beginwithangle:value,endAngle:value)"
+            ca_ctx.fillStyle="whitesmoke";
+            ca_ctx.ellipse(620,350,60,80,60,0,Math.PI*2);
+            ca_ctx.stroke();
+            ca_ctx.fill();
+            //Done
+        </script>
+    </body>
+</html>
